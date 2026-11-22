@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Station</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 25px 15px;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(145deg, #07152f, #153d68, #276b91);
+}
+
+.container {
+  max-width: 420px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h2 {
+  font-size: 25px;
+}
+
+.search {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+input {
+  width: 100%;
+  min-width: 0;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 12px;
+  background: #54c5ff;
+  color: #07152f;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.weather-card {
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 25px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+}
+
+.city {
+  font-size: 27px;
+}
+
+.icon {
+  font-size: 75px;
+  margin: 15px;
+}
+
+.temp {
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.condition {
+  font-size: 18px;
+  color: #c8eaff;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.detail-box {
+  padding: 18px 8px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+}
+
+.detail-box p {
+  margin: 8px 0;
+  color: #c8eaff;
+}
+
+.forecast {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.1);
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #b9d9ef;
+  font-size: 13px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+  <h2>🌦️ Weather Station</h2>
+  <p>Your Personal Weather Dashboard</p>
+</header>
+
+<div class="search">
+  <input type="text" placeholder="Enter City Name">
+  <button>Search</button>
+</div>
+
+<div class="weather-card">
+
+  <div class="city">Kolkata, India</div>
+
+  <div class="icon">☀️</div>
+
+  <div class="temp">29°C</div>
+
+  <p class="condition">Sunny Day</p>
+
+  <div class="details">
+
+    <div class="detail-box">
+      💧
+      <p>Humidity</p>
+      <strong>65%</strong>
+    </div>
+
+    <div class="detail-box">
+      💨
+      <p>Wind Speed</p>
+      <strong>12 km/h</strong>
+    </div>
+
+    <div class="detail-box">
+      🌡️
+      <p>Feels Like</p>
+      <strong>31°C</strong>
+    </div>
+
+    <div class="detail-box">
+      ☁️
+      <p>Cloud Cover</p>
+      <strong>10%</strong>
+    </div>
+
+  </div>
+</div>
+
+<div class="forecast">
+  <h3>📅 Weather Forecast</h3>
+  <p>Today ☀️ &nbsp; 29°C</p>
+  <p>Tomorrow 🌤️ &nbsp; 28°C</p>
+  <p>Day 3 🌧️ &nbsp; 26°C</p>
+</div>
+
+<footer>
+  My First Weather Station Project ❤️
+</footer>
+
+</div>
+
+</body>
+</html>
